@@ -1,0 +1,38 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    color: purple;
+}
+
+header h1, time{
+    padding: 20px;
+    font-size: 20px; 
+    border: 1px solid blue;
+    font-family: 'Trebu4het MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+h1 {
+    display: inline-block;
+}
+
+time {
+    padding-right: 60px;
+    float: right;
+}
+
+section.col {
+    display: inline-block;
+    
+    text-align: center;
+}
+
+.btn {
+    background-color: purple;
+    color: White;
+    text-align: center;
+    cursor: pointer;
+}
