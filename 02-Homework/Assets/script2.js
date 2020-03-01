@@ -1,19 +1,7 @@
-// start button to start quiz
-var startBtn = document.querySelector("#start");
-
-// Generate quiz by selecting button to view the first question
-startBtn.onclick = function() {
-    newPage()
-}
-
-function newPage() {
-    window.location.assign("./02-Homework/Assets/Question1.html")
-}
-
-// Add timer to countdown for score
-var timeLeft = 35
-localStorage.setItem('score', timeLeft)
+var timeLeft = localStorage.getItem('score')
 var timerEl = document.getElementById("score");
+timerEl.textContent = "Time: " + timeLeft;
+console.log(timeLeft)
 function timer() {
     var timeInterval = setInterval(function() {
       timerEl.textContent = "Time: " + timeLeft;
@@ -27,24 +15,18 @@ function timer() {
 }
 
 // question 1 correct answer
-// first way addEventListener
-document.getElementById("true1").addEventListener("click", newPage1);
-// var answer = Boolean;
-// addEventListener with additional instructions
-// document.getElementById("true1").addEventListener("click", function (){
-//     newPage1()
-//     answer = true;
-// }
+// document.getElementById("true1").addEventListener("click", newPage1);
 
-function newPage1() {
-    window.location.assign("./Question2.html")
-    
+// function newPage1() {
+//     window.location.assign("./Question2.html")
+    // time2 = timeleft;
+    // console.log(time2)
     // document.write("Correct!");
     // var tag = document.createElement("p");
     // tag.textContent = "Correct!";
     // document.body.appendChild(tag);
     // console.log(tag)
-}
+// }
 
 // var element = document.querySelector("#result1");
 // element.onload = function() {
@@ -56,5 +38,10 @@ function newPage1() {
 
 // }
 
+// document.getElementsByTagName("p")[0].addEventListener("onload", change);
+// function change(event){
+//     document.getElementsByTagName("p")[0].innerHTML = "YOU CLICKED ME!"
+//     console.log(event)
+// }
 
 timer()
