@@ -1,7 +1,15 @@
-* {
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body,
+.wrapper {
+  height: 100%;
+  margin: 0;
+  padding: 0;
 }
 
 body {
@@ -12,7 +20,7 @@ header h1, time{
     padding: 20px;
     font-size: 20px; 
     border: 1px solid blue;
-    font-family: 'Trebu4het MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-family: 'Trebu4het MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; */
 }
 
 h1 {
@@ -24,15 +32,23 @@ time {
     float: right;
 }
 
-section.col {
+.wrapper {
+    margin: 0 auto;
+    max-width: 750px;
+    padding: 30px 40px;
+    text-align: left;
+}
+
+    section.col {
     display: inline-block;
-    
-    text-align: center;
 }
 
 .btn {
     background-color: purple;
     color: White;
+    margin: 5px;
     text-align: center;
     cursor: pointer;
+    border-radius: 4px;
 }
+
