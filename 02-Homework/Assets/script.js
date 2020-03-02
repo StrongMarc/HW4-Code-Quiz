@@ -11,7 +11,7 @@ function newPage() {
 }
 
 // Add timer to countdown for score
-var timeLeft = 35
+var timeLeft = 75
 localStorage.setItem('score', timeLeft)
 var timerEl = document.getElementById("score");
 function timer() {
@@ -30,7 +30,6 @@ function timer() {
 // document.getElementById("true1").addEventListener("click", newPage1);
 var answer = false;
 localStorage.setItem('answer', answer)
-alert(answer)
 
 // addEventListener with additional instructions
 document.getElementById("true1").addEventListener("click", function() {

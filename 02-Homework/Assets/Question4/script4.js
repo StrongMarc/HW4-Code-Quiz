@@ -45,7 +45,7 @@ document.getElementById("last").addEventListener("click", function() {
 
 // function to go to question2.html
 function newPage1() {
-    window.location.assign("../Question4/Question4.html")
+    window.location.assign("../Question5/Question5.html")
 }
 
 // var element = document.querySelector("#result1");
