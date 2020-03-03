@@ -28,11 +28,11 @@
                     <div class="text-left">
                         <h2>All Done!</h2>  
                         <p id="final"></p>
-                        <!-- <form action="../Highscores/Highscores.html" onsubmit="myFunction()"> -->
-                        <form action="../Highscores/Highscores.html">
+                        <form id="myForm" onsubmit="myFunction()">
+                        <!-- <form> -->
                             <label for="initials">Enter Initials:</label>
-                            <input type="text" id="initials" name="initials">
-                            <input class="btn" type="submit" value="Submit">
+                            <input type="text" id="initials" name="initials" value="">
+                            <input class="btn" type="submit" formaction="../Highscores/Highscores.html" value="Submit">
                           </form>
                           <p id="result1"></p>
                     </div>
