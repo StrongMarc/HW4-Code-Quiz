@@ -41,6 +41,10 @@ function capture(){
     var x = document.getElementById('initials').value;
     document.getElementById('alert').innerHTML = x;
     localStorage.setItem('x', x)
+    var obj = {x , timeLeft }
+    var myJSON = JSON.stringify(obj)
+    alert (myJSON)
+    localStorage.setItem('myJSON', myJSON)
     window.location.assign("../Highscores/Highscores.html")
 }
 
