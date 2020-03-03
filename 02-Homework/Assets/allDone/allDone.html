@@ -31,9 +31,10 @@
                         <form id="myForm" onsubmit="myFunction()">
                         <!-- <form> -->
                             <label for="initials">Enter Initials:</label>
-                            <input type="text" id="initials" name="initials" value="">
-                            <input class="btn" type="submit" formaction="../Highscores/Highscores.html" value="Submit">
-                          </form>
+                            <input type="text" id="initials" value="" name="initials" >
+                            <input class="btn" type="button" value="Submit" onclick="capture()" formaction="../Highscores/Highscores.html" value="Submit">
+                            <div id="alert" style="color: red"></div>
+                        </form>
                           <p id="result1"></p>
                     </div>
                 </section>

@@ -1,9 +1,11 @@
 var timeLeft = localStorage.getItem('score')
 var timerEl = document.getElementById("score");
+var y = localStorage.getItem('x')
+alert(y)
 timerEl.textContent = "       ";
 
 var finalEl = document.getElementById("final");
-finalEl.textContent = "Your final score is " + timeLeft +".";
+finalEl.textContent = y + "," + timeLeft;
 
 document.getElementById("back").addEventListener("click", function() {
     backPage()

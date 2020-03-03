@@ -25,11 +25,23 @@ function myFunction() {
     //           console.log(characters);
     //         }
     // })
-    // var x = document.getElementById("myForm") 
+    // alert("hello")
+    // var x = document.getElementById("myForm").value
+    // document.getElementById('alert').innerHTML = 'The user input is: ' + x;
+    // console.log(x)
+    // alert(x)
+    // localStorage.setItem('x', x)
     // alert($(this).val())
     // // alert(y);
     // console.log(x)
     // document.getElementById("demo").innerHTML = x;
+}
+
+function capture(){
+    var x = document.getElementById('initials').value;
+    document.getElementById('alert').innerHTML = x;
+    localStorage.setItem('x', x)
+    window.location.assign("../Highscores/Highscores.html")
 }
 
 var obj = { name: "John", age: 30, city: "New York" };
