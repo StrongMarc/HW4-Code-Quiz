@@ -60,15 +60,4 @@ function newPage1() {
     window.location.assign("./Question2/Question2.html")
 }
 
-// var element = document.querySelector("#result1");
-// element.onload = function() {
-//     checkCookies()
-// }
-// function checkCookies(){
-//     var x = document.getElementById("result1")
-//     x.innerHTML = "Correct!";
-
-// }
-
-
 timer()

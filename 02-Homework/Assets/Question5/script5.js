@@ -13,6 +13,17 @@ function timer() {
     }, 1000);
 }
 
+// displays the result of the answer
+var result = localStorage.getItem('answer')
+var displayResult = document.getElementById("result1");
+
+if (result == "true") {   
+    displayResult.innerHTML = "Correct!";
+}
+else {
+    displayResult.innerHTML = "Wrong!";
+}
+
 // question 1 correct answer
 // first way addEventListener
 // document.getElementById("true1").addEventListener("click", newPage1);
